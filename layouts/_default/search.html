@@ -1,0 +1,28 @@
+{{- define "main" }}
+
+<header class="page-header">
+    {{/* 标题居中, 不要🔍太丑了 */}}
+    <h1 style="text-align: center;">
+        {{- (printf "%s" .Title ) | htmlUnescape -}}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header>
+
+<div id="searchbox">
+    {{/* placeholder 样式修改 */}}
+    {{/* emoji 🔍 🔎 ❓ ❔ ℹ️ 显示效果都不好, 改用 svg 怎么样？ */}}
+    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s" .Title) }} ↺"
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+
+{{- end }}{{/* end main */}}

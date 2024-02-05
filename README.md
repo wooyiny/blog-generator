@@ -27,3 +27,12 @@ A blog generator with my own theme customized upon PaperMod.
     - 404.html
     - robots.txt
         - 禁止爬虫
+
+## Theme Customize - Search
+- **search.html**
+    - 修改显示格式
+- **Section Search**
+    - /index.json(默认) : 只在根目录生成用于 search 的 json, 即只有全局搜索(site.RegularPages)
+    - section search: 我希望 section 的搜索结果不受其他 section 影响, 即局部搜索
+        - **list.json:** 生成 section 的 json
+        - **list.html:** 在 list page 里增加 🔍 按钮
