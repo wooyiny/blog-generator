@@ -1,0 +1,18 @@
+/* 以下三个是 Tailwind CSS 的命名约定 */
+/* anchor */
+
+/* 设置默认颜色 */
+.anchor .fill-current {
+  fill: #6272a4;  /* 替换为你想要的颜色 */
+}
+
+/* 设置透明度 */
+.anchor .o-60 {
+  opacity: 0.3;     /* 替换为你想要的透明度 */
+}
+
+/* 设置悬停颜色 */
+.anchor .hover-accent-color-light:hover {
+  fill: #3490dc;  /* 替换为你想要的悬停颜色 */
+  opacity: 0.6;     /* 替换为你想要的悬停透明度 */
+}
