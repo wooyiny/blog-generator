@@ -36,3 +36,21 @@ A blog generator with my own theme customized upon PaperMod.
     - section search: 我希望 section 的搜索结果不受其他 section 影响, 即局部搜索
         - **list.json:** 生成 section 的 json
         - **list.html:** 在 list page 里增加 🔍 按钮
+
+## Theme Configure
+- **archetypes/default.md**
+- **content/ - 骨架搭建**
+    - 几个特殊的 .md 文件
+        - about(关于): 不写自己, 写点祝福吧
+        - blogroll(友链): 待填
+        - archives(文章), 多个 search(搜索). ==注意配置 "layout" 才会生效==
+    - 关联配置: menu buttons socialIcons taxonomies(暂时维持默认)
+- **static 图标**
+    - 头像: avatar/*
+    - 封面: about/*
+    - favicon/*
+- **hugo.yaml**
+    - 按 [PaperMod wiki](https://github.com/adityatelange/hugo-PaperMod/wiki/) 与 [Hugo Doc](https://gohugo.io/getting-started/configuration/) 修改配置
+        - profile-mode copyright ...
+        - 暂未启用: comments, share, ShowPostNavLinks(上一页下一页), hidemeta ...
+        - 详情参考配置文件

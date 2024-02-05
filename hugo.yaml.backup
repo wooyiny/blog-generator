@@ -11,6 +11,16 @@ paginate: 10
 theme: PaperMod
 # timeout: 30000
 
+# 这些是 hugo 的配置, 都是默认值就不用设置了
+# enableInlineShortcodes: true
+# enableEmoji: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+# enableRobotsTXT: true   # 配置 robots.txt 不让爬
+
+# googleAnalytics: UA-123-45
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -44,22 +54,36 @@ menu:
       url: /search/
       weight: 100
 
+# index.json 用于 search
+# outputs:
+    # home:
+    #     - HTML
+    #     - RSS
+    #     - JSON
+    # section:
+    #     - HTML
+    #     - JSON
+
 params:
   
   # 例如: 若想列出 /about.md, 虽然它是 page, 但是由于它不属于任何 section, 所以不会被列出
   # ShowAllPagesInArchive: true     # Archives 模版列举 site.RegularPages, 即所有 posts
-  mainSections:                   # 用于 Archives 模版列举哪些 Sections 的 pages
-    - daily
-    - notes
-    - demo
+  # mainSections:                   # 用于 Archives 模版列举哪些 Sections 的 pages
+  #   - daily
+  #   - notes
+  #   - demo
 
-  description: "Yiny'S Blog"
+  # env: production   # to enable google analytics, opengraph, twitter-cards and schema.
+  # 下面这几个应该都是用于社交分享用的, 会创建对应的标签
+  # title: "ExampleSite123"   # title 不知道是干嘛用的, 貌似用的都是另外两处 title 的配置（site、profile-mode）
+  description: "Yiny'S Blog"    # description、keywords、author 用于创建 <meta> 标签, 见 head.html
   keywords: [Yiny'S Blog, Yiny, Blog]
   author: Yiny  # author: ["Me", "You"]   # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]    # 用于创建 og:image 标签
   
-  # 不生效, 直接写入 archetypes 里了
   DateFormat: "January 2, 2006"   # 用于 hugo 的 TIME.Format
   defaultTheme: dark    # dark、light、auto
+  disableThemeToggle: false
 
   ShowShareButtons: false   # 位于posts页脚的 分享banner, 没必要
   ShowPostNavLinks: false   # 上一页、下一页, 暂时不要
@@ -67,6 +91,7 @@ params:
   ShowCodeCopyButtons: true   # 代码段的 copy
 
   hidemeta: true    # 隐藏 date、read-time、author 和 其他语言版本, list 和 page 里都有
+  hideSummary: false    # 隐藏 list page 里的 summary 摘要
   ShowReadingTime: false   # 显示总阅读时长
   ShowWordCount: false   # 显示文章总字数
 
@@ -80,17 +105,32 @@ params:
 
   comments: false   # 暂时未配 comments
 
+  # 这俩配置大概是无效的，PaperMod exampleSite 的 config.xml 里看到的, wiki 未说明
+  # ShowAllPagesInArchive: true
+  # ShowPageNums: true
+
+  # 在 PaperMod exampleSite 的 config.xml 里看到的, 和 wiki 不符
   assets:
+  #   # disableHLJS: true   # to disable highlight.js
+  #   # disableFingerprinting: true
     favicon: "/favicon/favicon.ico"   # 收藏图标
     favicon16x16: "/favicon/favicon-16x16.png"
     favicon32x32: "/favicon/favicon-32x32.png"
     apple_touch_icon: "/favicon/apple-touch-icon.png"
+    # safari_pinned_tab: "/safari-pinned-tab.svg"   # 这玩意儿随便放个 svg 不生效是吗？
+
+  # 显示网站的图标
+  # label:
+  #   iconSVG: '<svg></svg>'    # 在 PaperMod exampleSite 的 config.xml 里看到的, 和 wiki 说明不符
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true
     title: Yiny
-    subtitle: "行走世界的脚印，记录思考的空间"
+    # subtitle: "行走世界的脚印，记录思考的空间"
     
     imageUrl: "/avatar/RETRIFIC.gif"    # 头像
     imageTitle: Avatar
@@ -103,6 +143,18 @@ params:
         url: /about
       - name: 建站
         url: /notes/tutorial/
+
+  # home-Info mode
+  # homeInfoParams:
+  #       Title: "PaperMod"
+  #       Content: >
+  #           Welcome to demo of hugo's theme PaperMod.
+
+  #           - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+
+  #           - Do give a 🌟 on Github !
+
+  #           - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
   # 社交链接
   socialIcons:
@@ -117,7 +169,15 @@ params:
 
   # 封面, 目前暂时还没弄
   cover:
+    # hidden: true  # hide everywhere but not in structured data
     hiddenInList: true  # hide on list pages and home
+    # hiddenInSingle: true  # hide on single page
+
+  # 显示版本修改链接, 没用
+  # editPost:
+  #   URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # search, 搜索相关配置
   # https://fusejs.io/api/options.html
@@ -133,6 +193,8 @@ params:
 
 # highlight 相关配置, Pygments 是 python 的高亮库
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# Hugo 默认的高亮库是 Chroma, 如果想用老版的 Pygments, 设置为 true, PaperMod 现在用的就是 Chroma, 所以这行大概不生效
+# pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
@@ -141,6 +203,13 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+# 参考 PaperMod exampleSite 的 config.yml, 不知道生不生效, 反正这俩我都不用, 先配上
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
 
 # footer, 目前的显示效果为  © 2023 by Yiny
 copyright: "**[Yiny](https://wooyiny.github.io/)**"   # markdown 链接, ** ** 表示加粗
