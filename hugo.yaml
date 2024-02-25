@@ -134,6 +134,9 @@ params:
 # highlight 相关配置, Pygments 是 python 的高亮库
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
     # anchorLineNos: true

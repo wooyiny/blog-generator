@@ -1,3 +1,5 @@
+# 这是备份, 对配置文件尽可能详细的做了注释
+
 # 配置文件参考链接:
   # https://gohugo.io/getting-started/configuration/
   # https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
@@ -83,7 +85,7 @@ params:
   
   DateFormat: "January 2, 2006"   # 用于 hugo 的 TIME.Format
   defaultTheme: dark    # dark、light、auto
-  disableThemeToggle: false
+  disableThemeToggle: false # 默认 false
 
   ShowShareButtons: false   # 位于posts页脚的 分享banner, 没必要
   ShowPostNavLinks: false   # 上一页、下一页, 暂时不要
@@ -91,7 +93,7 @@ params:
   ShowCodeCopyButtons: true   # 代码段的 copy
 
   hidemeta: true    # 隐藏 date、read-time、author 和 其他语言版本, list 和 page 里都有
-  hideSummary: false    # 隐藏 list page 里的 summary 摘要
+  hideSummary: false    # 默认 false, 隐藏 list page 里的 summary 摘要
   ShowReadingTime: false   # 显示总阅读时长
   ShowWordCount: false   # 显示文章总字数
 
@@ -130,7 +132,7 @@ params:
   profileMode:
     enabled: true
     title: Yiny
-    # subtitle: "行走世界的脚印，记录思考的空间"
+    subtitle: "行走世界的脚印，记录思考的空间"
     
     imageUrl: "/avatar/RETRIFIC.gif"    # 头像
     imageTitle: Avatar
@@ -146,15 +148,15 @@ params:
 
   # home-Info mode
   # homeInfoParams:
-  #       Title: "PaperMod"
-  #       Content: >
-  #           Welcome to demo of hugo's theme PaperMod.
+  #   Title: "PaperMod"
+  #     Content: >
+  #       Welcome to demo of hugo's theme PaperMod.
 
-  #           - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+  #       - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
 
-  #           - Do give a 🌟 on Github !
+  #       - Do give a 🌟 on Github !
 
-  #           - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+  #       - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
   # 社交链接
   socialIcons:
@@ -193,9 +195,14 @@ params:
 
 # highlight 相关配置, Pygments 是 python 的高亮库
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# Hugo 默认的高亮库是 Chroma, 如果想用老版的 Pygments, 设置为 true, PaperMod 现在用的就是 Chroma, 所以这行大概不生效
+
+# Hugo 默认的高亮库是 Chroma, 想用老版的 Pygments 就设置为 true. PaperMod 现在用的就是 Chroma, 所以这行大概不生效
 # pygmentsUseClasses: true
+
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
     # anchorLineNos: true

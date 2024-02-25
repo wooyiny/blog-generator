@@ -8,12 +8,10 @@ showtoc: false
 
 ----
 
-{{< rawhtml >}}
 <video playsinline="" autoplay="" muted="" loop="" style="width: 100%; height: 100%;">
     <source src="/about/海边.webm" type="video/webm">
     <source src="/about/海边.mp4" type="video/mp4">
 </video>
-{{< /rawhtml >}}
 
 ----
 

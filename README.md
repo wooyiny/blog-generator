@@ -54,3 +54,9 @@ A blog generator with my own theme customized upon PaperMod.
         - profile-mode copyright ...
         - 暂未启用: comments, share, ShowPostNavLinks(上一页下一页), hidemeta ...
         - 详情参考配置文件
+
+## Theme Configure - rawhtml
+- **配置 [markup.goldmark.renderer.unsafe]: true**
+    - goldmark 默认不会渲染 html, 需要在 markdown 里用 `{{ rawhtml}}` `{{ /rawhtml }}`
+    - 启用以能在 markdown 里直接使用 html, 顺便把 about.md 改了
+    - ps. 在模版里用 safehtml
