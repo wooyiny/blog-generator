@@ -1,0 +1,23 @@
+/* 首先不支持动态, 即时用的是 APNG 或 GIF */
+/* 其次写在一个标签下 前面的会被后面的覆盖 */
+/* 指定 URL 后且加载成功后, 第二个参数就不生效了 */
+
+html {
+    cursor: url("/cursors/default.png/"), auto;
+}
+
+a {
+    cursor: url("/cursors/pointer.png/"), pointer;
+}
+
+code {
+    cursor: url("/cursors/text.png/"), text;
+}
+
+input {
+    cursor: url("/cursors/text.png/"), text;
+}
+
+.copy-code {
+    cursor: url("/cursors/copy.png/"), copy;
+}

@@ -60,3 +60,21 @@ A blog generator with my own theme customized upon PaperMod.
     - goldmark 默认不会渲染 html, 需要在 markdown 里用 `{{ rawhtml}}` `{{ /rawhtml }}`
     - 启用以能在 markdown 里直接使用 html, 顺便把 about.md 改了
     - ps. 在模版里用 safehtml
+
+## Theme Customize - Add Animation Effects
+- 新增特效
+    - **fish.js** - 底部小鱼跃动特效
+    - **canvas-nest** - 蛛网背景
+    - **cursor**
+    - **firework.js** - 鼠标点击特效
+    - **Aplayer** - 音乐播放器, 音乐外链
+- 相关文件
+    - **assets/**
+        - css/extended/
+            cursors.css, fish.css
+        - js/*
+    - **layouts/**
+        - partials/**extended_footer.html**
+    - **static/**
+        - audio/*
+        - cursors/*
