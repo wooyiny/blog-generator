@@ -78,3 +78,10 @@ A blog generator with my own theme customized upon PaperMod.
     - **static/**
         - audio/*
         - cursors/*
+
+## bugFix - cursors 获取失败 404
+- 问题描述
+    - 本地运行正常, 但是 GitHub Page 显示异常, 报错 404 即文件下载异常
+- 原因分析
+    - css 路径写的有问题, 原以为是需要带域名 wooyiny.github.io
+    - 结果是因为 url 最后的  `\` 被一起识别进后缀名 `.png\` 导致文件类型识别异常, 太离谱了
