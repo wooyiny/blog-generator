@@ -85,3 +85,13 @@ A blog generator with my own theme customized upon PaperMod.
 - 原因分析
     - css 路径写的有问题, 原以为是需要带域名 wooyiny.github.io
     - 结果是因为 url 最后的  `\` 被一起识别进后缀名 `.png\` 导致文件类型识别异常, 太离谱了
+
+## Refactor - Aplayer 改用外链访问资源
+- 问题描述
+    - Github 的仓库免费空间和网速都有限制,  将音频文件原封上传属实太大了, 用外链更合适
+- 具体实现
+    -  **extend_footer.html** - Aplayer 配置里的 URL 改用外链
+        - 目前使用的 Github Repo + PicGo + jsdelivr 的方案, 设置了两个仓库, 一个用做图床, 一个用于音乐外链
+    - 删除 static/**audio**/*
+- 后续
+    - 资源还是得慢慢上云才行, 否则本体太大无法接受
