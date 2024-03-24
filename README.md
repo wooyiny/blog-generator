@@ -107,3 +107,7 @@ A blog generator with my own theme customized upon PaperMod.
 - 注意
     - submodule 的 HEAD 是分离状态, 要 checkout 到 master 才能 pull
     - 更新完记得 detach HEAD, 以防之后自动跟着更新
+
+## Refactor - about 外链地址
+- about 外链地址写错了
+- content 目录名改了几个
