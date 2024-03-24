@@ -32,55 +32,81 @@
         container: document.getElementById('aplayer'),
         fixed: true,
         autoplay: true,
-        theme: '#F0FFFF',
+        theme: '#F0FFFF',  // #2E2E2E #002366 #FFDAB9
         order: 'random',
         // mutex: true,    // 为何不生效?
+        lrcType: 3,
         audio: [
             {
                 name: '披星戴月的想你',
                 artist: '告五人',
-                url: 'https://raw.githubusercontent.com/wooyiny/PicGo-AudioRepo/main/披星戴月的想你.flac',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/MOONCAKE.gif',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/告五人 - 披星戴月的想你.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/MOONCAKE.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/披星戴月的想你.lrc',
             },
             {
-                name: '爱我还是他',
-                artist: '陶喆',
-                url: 'https://raw.githubusercontent.com/wooyiny/PicGo-AudioRepo/main/%E7%88%B1%E6%88%91%E8%BF%98%E6%98%AF%E4%BB%96.flac',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/MOVAVI%20ON%20AIR!.gif',
-            },
-            {
-                name: '望春风',
-                artist: '陶喆',
-                url: 'https://cdn.jsdelivr.net/gh/wooyiny/PicGo-AudioRepo@main/%E6%9C%9B%E6%98%A5%E9%A3%8E.flac',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/蓬蓬球.png',
-                theme: '#FFDAB9'
-            },
-            {
-                name: '浮光',
-                artist: '周深',
-                url: 'https://cdn.jsdelivr.net/gh/wooyiny/PicGo-AudioRepo@main/%E6%B5%AE%E5%85%89.mp3',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/CONSTELLATION.png',
-                theme: '#002366'
-            },
-            {
-                name: '若梦',
-                artist: '周深',
-                url: 'https://raw.githubusercontent.com/wooyiny/PicGo-AudioRepo/main/若梦.flac',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/一袋豆子.png',
-                theme: '#E6E6FA'
+                name: '鲜花',
+                artist: '回春丹',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/回春丹 - 鲜花.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/AKU HEADBANG.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/鲜花.lrc',
             },
             {
                 name: '黑夜问白天',
                 artist: '林俊杰',
-                url: 'https://raw.githubusercontent.com/wooyiny/PicGo-AudioRepo/main/黑夜问白天.flac',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/COMMANDO.png',
-                theme: '#2E2E2E',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/林俊杰 - 黑夜问白天.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/KYO.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/黑夜问白天.lrc',
             },
             {
                 name: '浪漫血液',
                 artist: '林俊杰',
-                url: 'https://raw.githubusercontent.com/wooyiny/PicGo-AudioRepo/main/浪漫血液.flac',
-                cover: 'https://raw.githubusercontent.com/wooyiny/PicGo-ImageRepo/main/audio-covers/HATTIE.gif',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/林俊杰 - 浪漫血液.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/HATTIE.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/浪漫血液.lrc',
+            },
+            {
+                name: '雨还是不停地落下',
+                artist: '孙燕姿',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/孙燕姿 - 雨还是不停地落下.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/TRISH.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/雨还是不停地落下.lrc',
+            },
+            {
+                name: '爱我还是他',
+                artist: '陶喆',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/陶喆 - 爱我还是他.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/ON AIR!.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/爱我还是他.lrc',
+            },
+            {
+                name: '望春风',
+                artist: '陶喆',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/陶喆 - 望春风.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/HER.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/望春風.lrc',
+            },
+            {
+                name: '浮光',
+                artist: '周深',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/周深 - 浮光.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/GOLDISCO.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/浮光.lrc',
+            },
+            {
+                name: '若梦',
+                artist: '周深',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/周深 - 若梦.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/BUTTERFLIES.png',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/若梦.lrc',
+                theme: '#E6E6FA'
+            },
+            {
+                name: '焰火',
+                artist: '周深',
+                url: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/audio/周深 - 焰火.mp3',
+                cover: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/cover/YU.gif',
+                lrc: 'https://cdn.jsdelivr.net/gh/wooyiny/blog-assets@main/aplayer/lrc/焰火.lrc',
             },
         ]
     });
@@ -89,6 +115,9 @@
 <style>
     #aplayer {
         opacity: 0.55;
+    }
+    .aplayer-lrc-contents {
+        text-shadow: -1px -1px 1px rgba(250, 223, 163, 1);
     }
 </style>
 {{- end -}}

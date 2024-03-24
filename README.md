@@ -95,3 +95,8 @@ A blog generator with my own theme customized upon PaperMod.
     - 删除 static/**audio**/*
 - 后续
     - 资源还是得慢慢上云才行, 否则本体太大无法接受
+
+## Refactor - 外链访问
+- Aplayer 外链重构 (audio cover lrc), 并修改歌词颜色
+- copyright 右对齐, 主要是和歌词的位置冲突了
+- about 改用外链 avator cursor favicon 暂时保留
