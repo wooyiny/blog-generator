@@ -100,3 +100,10 @@ A blog generator with my own theme customized upon PaperMod.
 - Aplayer 外链重构 (audio cover lrc), 并修改歌词颜色
 - copyright 右对齐, 主要是和歌词的位置冲突了
 - about 改用外链 avator cursor favicon 暂时保留
+
+## Theme Update
+- PaperMod 主题更新. 理由: 当前版本显示 logo 有 bug, 观感很不好
+    - separator displayed with Single lang sites
+- 注意
+    - submodule 的 HEAD 是分离状态, 要 checkout 到 master 才能 pull
+    - 更新完记得 detach HEAD, 以防之后自动跟着更新
