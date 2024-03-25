@@ -111,3 +111,8 @@ A blog generator with my own theme customized upon PaperMod.
 ## Refactor - about 外链地址
 - about 外链地址写错了
 - content 目录名改了几个
+
+## bugFix - 目录重命名后访问异常
+- 问题描述
+    - 目录名关联三个功能: menu、archives 搜索、 button 主页图标
+    - 重命名后, 配置文件忘记改了, 造成访问异常
