@@ -116,3 +116,7 @@ A blog generator with my own theme customized upon PaperMod.
 - 问题描述
     - 目录名关联三个功能: menu、archives 搜索、 button 主页图标
     - 重命名后, 配置文件忘记改了, 造成访问异常
+
+## Refactor - TI5 cursor
+- 目录名从 *cursors* 改用 *cursor*
+- 改用 DOTA2 TI5 金叶子指针

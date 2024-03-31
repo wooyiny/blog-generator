@@ -3,21 +3,21 @@
 /* 指定 URL 后且加载成功后, 第二个参数就不生效了 */
 
 html {
-    cursor: url("/cursors/default.png"), auto;
+    cursor: url("/cursor/cursor_default.cur"), auto;
 }
 
 a {
-    cursor: url("/cursors/pointer.png"), pointer;
+    cursor: url("/cursor/cursor_pointer.cur"), pointer;
 }
 
 code {
-    cursor: url("/cursors/text.png"), text;
+    cursor: url("/cursor/cursor_green.cur"), text;
 }
 
 input {
-    cursor: url("/cursors/text.png"), text;
+    cursor: url("/cursor/cursor_green.cur"), text;
 }
 
 .copy-code {
-    cursor: url("/cursors/copy.png"), copy;
+    cursor: url("/cursor/cursor_red.cur"), copy;
 }
