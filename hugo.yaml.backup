@@ -56,7 +56,7 @@ menu:
       url: /search/
       weight: 100
 
-# index.json 用于 search
+# index.json 用于 search, 不可删除
 # outputs:
     # home:
     #     - HTML

@@ -44,6 +44,16 @@ menu:
       url: /search/
       weight: 100
 
+# index.json 用于 search, 不可删除
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+    section:
+        - HTML
+        - JSON
+
 params:
   
   # 例如: 若想列出 /about.md, 虽然它是 page, 但是由于它不属于任何 section, 所以不会被列出

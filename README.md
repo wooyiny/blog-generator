@@ -120,3 +120,7 @@ A blog generator with my own theme customized upon PaperMod.
 ## Refactor - TI5 cursor
 - 目录名从 *cursors* 改用 *cursor*
 - 改用 DOTA2 TI5 金叶子指针
+
+## bugFix - search 功能异常
+- 原因
+    - 配置文件必须配上 [outputs:], 否则缺少 json 文件会导致搜索功能异常
