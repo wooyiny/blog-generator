@@ -124,3 +124,6 @@ A blog generator with my own theme customized upon PaperMod.
 ## bugFix - search 功能异常
 - 原因
     - 配置文件必须配上 [outputs:], 否则缺少 json 文件会导致搜索功能异常
+
+## Theme Customize - Use Smiley Sans
+- 字体使用 得意黑 (Smiley Sans)
