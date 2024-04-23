@@ -127,3 +127,6 @@ A blog generator with my own theme customized upon PaperMod.
 
 ## Theme Customize - Use Smiley Sans
 - 字体使用 得意黑 (Smiley Sans)
+
+## Refactor - Cursors resize 20*20
+- 指针尺寸调整
