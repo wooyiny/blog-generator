@@ -130,3 +130,9 @@ A blog generator with my own theme customized upon PaperMod.
 
 ## Refactor - Cursors resize 20*20
 - 指针尺寸调整
+
+## Refactor -  Font Config
+- 取消得意黑 (Smiley Sans), 风格不匹配.
+    - 改用 Iosevka Custom + 思源黑体 (Source Han Sans CN)
+    - 改用 css 取代 extend_head.html
+- theme-vars.css 修改 code block 颜色
